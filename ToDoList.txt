@@ -1,0 +1,134 @@
+
+//TO Do List
+
+> Match NAVBAR % HERO responsiveness to holder responsiveness...[HIGH]
+> Fix navbar element's padding and polygon hover glitch[MEDIUM]
+> Redesign hamburger menu[HIGH]
+> On scroll text animations [MEDIUM]
+
+
+
+
+
+
+
+
+
+
+
+
+
+//JUNK
+
+@media (max-width: 1330px) {
+
+  .abtus-ctr-flex{
+    max-width: 1117px !important;
+  }
+
+
+  .abtus-ctr-flex img{
+    width: 600px;
+  }
+
+  .abtus-title{
+    right: 46%;
+    font-size: calc(var(--text-heading-size) * .9);
+    line-height: calc(var(--text-heading-size) * 2.75);
+  }
+
+}
+
+@media (max-width: 1140px) {
+
+  .abtus-ctr-flex{
+    max-width: 1014px !important;
+  }
+
+  /* .sec-abtus > .container{
+    padding-left: 62.59px !important;
+    padding-right: 62.59px !important;
+  } */
+
+
+  .abtus-ctr-flex img{
+    width: 500px;
+  }
+
+  .abtus-title{
+    top: 6%;
+    right: 42%;
+    font-size: calc(var(--text-heading-size) * .8);
+    line-height: calc(var(--text-heading-size) * 2.75);
+  }
+}
+
+@media (max-width: 1046px) {
+  .abtus-ctr-flex{
+    max-width: 840px !important;
+  }
+
+
+  /* .sec-abtus > .container{
+    padding-left: 104.6px !important;
+    padding-right: 104.6px !important;
+  } */
+
+  .abtus-ctr-flex img{
+    width: 480px;
+  }
+
+  .abtus-title{
+    right: 50%;
+    font-size: calc(var(--text-heading-size) * .7);
+    line-height: calc(var(--text-heading-size) * 2.75);
+  }
+
+  .abtus-cnt,
+  .hgl-txt p{
+    font-size: calc(var(--text-body-size) *.8);
+  }
+
+  #right-arrow-icon{
+    font-size: calc(var(--icon-body-size) * .8) !important;
+  }
+
+
+}
+
+@media (max-width: 836px) {
+  .abtus-ctr-flex{
+    max-width: 670px !important;
+  }
+
+  /* .sec-abtus > .container{
+    padding-left: 83.6px !important;
+    padding-right: 83.6px !important;
+    background-color: green;
+  } */
+
+  
+  .abtus-ctr-flex img{
+    width: 380px;
+  }
+
+  .abtus-title{
+    right: 50%;
+    font-size: calc(var(--text-heading-size) * .5);
+    line-height: calc(var(--text-heading-size) * 1.75);
+  }
+
+  .abtus-title hr {
+    height: 6px;
+  }
+
+  .abtus-cnt,
+  .hgl-txt p{
+    font-size: calc(var(--text-body-size) *.7);
+  }
+
+  #right-arrow-icon{
+    font-size: calc(var(--icon-body-size) * .7) !important;
+  }
+
+}
