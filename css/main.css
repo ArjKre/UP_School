@@ -26,9 +26,12 @@ Content - cnt
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--font-Main);
   list-style: none;
   text-decoration: none;
+}
+
+html{
+  font-family: var(--font-Main);
 }
 
 /* HEADER & NAVBAR */
@@ -37,7 +40,7 @@ Content - cnt
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1001;
+  z-index: 1100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -97,7 +100,7 @@ Content - cnt
 }
 
 .header.scroll {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   
 }
@@ -174,13 +177,6 @@ Content - cnt
   text-wrap: pretty;
 }
 
-.abt-title-sm-sc {
-  font-size: var(--font-handwriting) !important;
-  display: none;
-  letter-spacing: 8px;
-  line-height: calc(var(--text-heading-size) * 3.75);
-  font-size: var(--text-heading-size);
-}
 
 .abt-cnt p {
   margin-right: 15px;
@@ -197,10 +193,14 @@ Content - cnt
 
 .abt-img-frame img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 700px;
   aspect-ratio: 700/600;
+}
+
+.abt-title-sm-sc {
+  display: none;
 }
 
 .abt-title {
@@ -208,25 +208,54 @@ Content - cnt
   z-index: 1001;
   top: 5%;
   left: -31%;
+ 
+}
+
+.abt-title ,
+.abt-title-sm-sc {
+  color: var(--color-primary);
+  font-family: var(--font-handwriting);
   letter-spacing: 8px;
   line-height: calc(var(--text-heading-size) * 3.75);
   font-size: var(--text-heading-size);
 }
 
-.abt-title h2,
-.abt-title-sm-sc h2{
-  color: var(--color-primary);
-  font-family: var(--font-handwriting);
-}
-
 
 /* STATS SECTION */
+.stat{
+  background-color: #f1f1f1;
+}
+
+.stat > .col {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .stat-flex{
   display: flex;
   justify-content: space-around;
 }
 
+
+.stat-cnt-number{
+  font-size: var(--text-heading-size);
+  font-family: var(--font-handwriting);
+  color: var(--color-primary);
+}
+
+
 /* MEDIA QUERIES */
+
+/* Just for now need to be fixed later... */
+@media (min-width: 1280px) {
+
+  .hero-holder{
+    margin-left: 50px !important;
+  }
+  
+}
+
 
 @media (max-width: 1280px) {
   .holder {

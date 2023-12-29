@@ -6,6 +6,7 @@
 /* button template */
 
 .button-86 {
+    font-family: var(--font-Main);
     all: unset;
     width: 100px;
     height: 30px;
@@ -82,6 +83,7 @@
  
   /* Button style 28 */
   .button-28 {
+  font-family: var(--font-Main);
   width: 120px;
   height: 50px;
   margin-left: 0;
