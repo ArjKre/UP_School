@@ -47,3 +47,36 @@ const observer = new IntersectionObserver((entries)=>{
 const hideElements = document.querySelectorAll('.aos-hidden');
 hideElements.forEach((el)=> observer.observe(el));
 
+
+// animate number counter
+const counterNum = document.querySelectorAll(".stat-cnt-number");
+const speed = 500;
+function counterFunction(){
+    counterNum.forEach((curElem) => {
+        const updateNumber = () => {
+            const targetNumber = parseInt(curElem.dataset.number);
+            // console.log(targetNumber);
+            const initialNum = parseInt(curElem.innerText);
+            // console.log(initialNum);
+            
+            const incrementNumber = Math.trunc(targetNumber / speed);
+            // console.log(incrementNumber);
+            
+            if (initialNum < targetNumber) {
+                curElem.innerText = `${initialNum + incrementNumber}+`;
+                setTimeout(updateNumber, 10);
+            }
+        };
+        updateNumber();
+    });
+}
+
+const statSection = document.querySelectorAll(".stat-cnt");
+const statSelectionObserver = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            counterFunction();
+        }
+    });
+});
+statSection.forEach((el) => statSelectionObserver.observe(el));
