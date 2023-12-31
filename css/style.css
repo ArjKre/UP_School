@@ -70,6 +70,10 @@
   }
 }
 
+
+
+
+
 /* web Scrollbar */
 
 ::-webkit-scrollbar {
@@ -91,6 +95,14 @@
 
 
 /* MEDIA QUERY FOR HERO & NAVBAR */
+
+/* Just for now need to be fixed later... */
+@media (min-width: 1280px) {
+  .hero-holder {
+    margin-left: 50px !important;
+  }
+}
+
 @media (max-width: 1180px) {
   /* Navbar */
 
