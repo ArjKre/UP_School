@@ -3,6 +3,8 @@ Container - ctr
 Content - cnt
  */
 
+ @import url('style.css');
+
 :root {
   --header-height: 100px;
   --color-text-black: #000000;
@@ -134,19 +136,19 @@ html {
   margin: 0 !important;
 }
 
-.hero h1 {
+.hero #hero-mal {
   font-family: var(--font-Main);
   color: var(--color-text-white);
   font-size: var(--text-title-size);
-}
-
-#hero-mal{
   font-family: var(--font-malayalam);
 }
 
 
-#hero-welcome-text {
+
+
+.hero #hero-welcome{
   font-size: var(--text-heading-size);
+  color: var(--color-text-white);
 }
 
 .hero p {
@@ -279,12 +281,33 @@ html {
   letter-spacing: 4px;
   display: flex;
   justify-content: center;
+  transition: all 2s !important;
 }
+
 
 .gallerygrid{
   display: flex;
   justify-content: center;
 }
+
+.gallerygrid .Gridbox:nth-child(5){
+  position: relative;
+}
+
+.gallerygrid > .gal-btn-sml{
+  display: none;
+}
+
+.Gridbox button{
+  position: absolute;
+  margin-top: 20px !important;
+  margin-left:20px !important;
+  color: #fff;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}  
 
 .Gridbox{
   padding: 2.5px;
@@ -356,12 +379,7 @@ html {
 
 
 
-
-
-
-
 /*----------  MEDIA QUIRES  ----------*/
-
 
 
 @media (max-width: 1280px) {
@@ -449,6 +467,13 @@ html {
   
   /*----------  GALLERY  ----------*/
 
+    .Gridbox button{
+      margin-top: 5px !important;
+      margin-left: 10px !important;
+      width: 110px;
+      height: 45px;
+    }
+
     .Gridbox{
       padding: 2.5px;
     }
@@ -497,6 +522,13 @@ html {
   
   /*----------  GALLERY  ----------*/
   
+  .Gridbox button{
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    width: 90px;
+    height: 44px;
+  }
+
   .Gridbox{
     padding: 2.5px;
   }
@@ -527,7 +559,6 @@ html {
 @media (max-width: 640px) {
 
   .holder {
-    border: 1px solid;
     max-width: 475px !important;
   }
 
@@ -586,8 +617,26 @@ html {
       max-width: 100% !important;
     }
 
+    .Gridbox button{
+      display: none !important;
+    }
+
+    .gallerygrid > button
+    {
+      float: right;
+      color: #fff;
+      background-color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      display: block !important;
+      margin-right: 40px;
+      margin-top: 2.5px;
+    }
+
   .gallerygrid{
     flex-direction: column;
+    align-items: flex-end;
   }
   
   .Gridbox{

@@ -35,7 +35,7 @@ menu.onclick = function(){
 };
 
 
-//for text animation on Scroll
+//for text-from-right animation on Scroll
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -46,6 +46,8 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hideElements = document.querySelectorAll('.aos-hidden');
 hideElements.forEach((el)=> observer.observe(el));
+
+
 
 
 // animate number counter
@@ -80,3 +82,16 @@ const statSelectionObserver = new IntersectionObserver((entries)=>{
     });
 });
 statSection.forEach((el) => statSelectionObserver.observe(el));
+
+
+//Reveal animation on scroll
+const TextAnimationObserver = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('aos-reveal-show');
+        }
+    });
+});
+
+const RevealElements = document.querySelectorAll('.aos-reveal-hidden');
+RevealElements.forEach((el)=> TextAnimationObserver.observe(el));

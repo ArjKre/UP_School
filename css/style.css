@@ -68,9 +68,22 @@
   .aos-hidden{
     transition: none;
   }
+
+  .aos-reveal-hidden{
+    transition: none;
+  }
 }
 
+.aos-reveal-hidden{
+  opacity: 0;
+  transform: translateY(100deg);
+  transition: all 4s;
+}
 
+.aos-reveal-show{
+  opacity: 1;  
+  transition: translateY(0deg);
+}
 
 
 
