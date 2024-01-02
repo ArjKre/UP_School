@@ -2,13 +2,13 @@
 
 
 .sec{
-  margin-top: 5vh;
+  margin-block-start: 50px !important;
 }
 
 .container{
   /* border: 1px solid magenta; */
   width: 100%;
-  padding: 10px 15px 15px 10px;
+  /* padding: 10px 15px 15px 10px; */
   box-sizing: border-box;
 }
 
@@ -94,7 +94,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(241, 241, 241, 0.5); /* Set the color of the scrollbar track */
+   background-color: rgba(241, 241, 241, 0.5); /*Set the color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -104,7 +104,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Set the color of the thumb on hover */
-}
+} 
 
 
 /* MEDIA QUERY FOR HERO & NAVBAR */

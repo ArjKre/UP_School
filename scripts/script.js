@@ -95,3 +95,5 @@ const TextAnimationObserver = new IntersectionObserver((entries)=>{
 
 const RevealElements = document.querySelectorAll('.aos-reveal-hidden');
 RevealElements.forEach((el)=> TextAnimationObserver.observe(el));
+
+
