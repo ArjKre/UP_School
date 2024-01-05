@@ -178,7 +178,7 @@
     <!-- /*============================================= 
           =           MANAGEMENT SECTION          =
       =============================================*/-->
-    <section
+    <!-- <section
       class="container sec mang-ctr"
       style="height: 40vh; margin-top: 0 !important; border: 1px solid pink">
       <div class="holder Mgmt-hld">
@@ -186,7 +186,7 @@
           <h1>OUR EDUCATORS</h1>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- /*=============================================
       =            GALLERY SECTION            =
@@ -200,9 +200,6 @@
           </div>
           <hr class="aos-reveal-hidden" style="transition-delay: 500ms" />
         </div>
-        <!-- <div class="wrapper gal-title aos-hidden">
-            <h1>GALLERY</h1>
-          </div> -->
         <div class="wrapper gallerygrid">
           <div class="Gridbox">
             <div
@@ -354,41 +351,74 @@
     <section class="container sec map-ctr">
       <div class="map-hld">
         <div class="wrapper map-title">
-          <h1>Road To Us</h1>
-          <p>Direction To Our School</p>
+          <h1 class="aos-hidden" style="transition-delay: 100ms">Road To Us</h1>
+          <p class="aos-hidden" style="transition-delay: 200ms">
+            Direction To Our School
+          </p>
         </div>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.4828844655863!2d76.41538111781054!3d10.106420558265626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0809ac7216dbc9%3A0x1573d89c500faf96!2sGovt.%20UP%20School%20North%20Vazhakkulam!5e0!3m2!1sen!2sin!4v1704188673311!5m2!1sen!2sin"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.4828844655863!2d76.41538111781054!3d10.106420558265626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0809ac7216dbc9%3A0x1573d89c500faf96!2sGovt.%20UP%20School%20North%20Vazhakkulam!5e0!3m2!1sen!2sin!4v1704188673311!5m2!1sen!2sin"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
 
-    <footer class="container" style="border: 1px solid blue;">
-        <div class="holder ft-flex">
-          <div class="col-1">
-            <div class="log-frame">
-              <img src="assets/images/EdKeralaLogo.png" />
-              <span>ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</span>
-            </div>
+    <!--/*=============================================
+          =            FOOTER            =
+    =============================================*/-->
+    <footer class="container ft-holder">
+      <div class="holder ft-flex">
+        <div class="wrapper col-1">
+          <div class="logo-frame">
+            <img src="assets/images/EdKeralaLogo.png" />
+            <span>ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</span>
           </div>
-          <div class="col-2">
-            <div class="title">Contact</div>
-            <div class="bx bxs-location-plus">
-              4C48+GHW, Kunnathukara Rd, Marampally, Kerala 683105
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            doloribus ducimus ipsum dolore illo ex vitae laborum dignissimos
+            reiciendis incidunt.
+          </p>
+        </div>
+        <div class="wrapper col-2">
+          <h2 class="title">Contact</h2>
+          <div class="col-2-holder">
+            <div class="col-2-div loc-txt">
+              <div class="bx bxs-location-plus "></div>
+              <p>4C48+GHW,Kunnathukara Rd,Marampally</p>
             </div>
-            <div class="bx bxs-phone">04842678628</div>
-            <div class="bx bxs-envelope">gupsnorthvazhakulam@gmail.com</div>
-          </div>
-          <div class="col-3">
-            <div class="title">Quick Links</div>
-            <a href="#">About Us</a>
-            <a href="#">Managment</a>
-            <a href="#">Academics</a>
-            <a href="#">Events</a>
-            <a href="#">Contact Us</a>
+            <div class="col-2-div">
+              <div class="bx bxs-phone "></div>
+              <p>+91 4842678628</p>
+            </div>
+            <div class="col-2-div"style="align-items: end !important">
+              <div class="bx bxs-envelope "></div>
+              <p>gupsnorthvazhakulam@gmail.com</p>
+            </div>
           </div>
         </div>
+        <div class="wrapper col-3">
+          <h2 class="title">Quick Links</h2>
+          <div class="col-3-holder">
+            <div class="col-3-1">
+              <a class="ft-txt" href="#">About Us</a>
+              <a class="ft-txt" href="#">Managment</a>
+              <a class="ft-txt" href="#">Academics</a>
+            </div>
+            <div class="col-3-1">
+              <a class="ft-txt" href="#">Events</a>
+              <a class="ft-txt" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="holder ft-holder-2">
+        <hr />
+        <div class="flex-txt">
+          <p>©2024|Govt. UP School North Vazhakkulam.All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
 
     <!--custom js link-->
