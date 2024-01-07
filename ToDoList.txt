@@ -4,11 +4,22 @@
 > Match NAVBAR % HERO responsiveness to holder responsiveness...[HIGH]
 > Fix navbar element's padding and polygon hover glitch[MEDIUM]
 > Redesign hamburger menu[HIGH]
-> On scroll text animations [MEDIUM]
 >Gallery - SHow full image when clicked with button to go to the next,& on image hover show description [HIGH]
 
+> "READ MORE" text link redirect to the appropriate page.[HIGH]
+>Gallery button redirect to the appropriate page.[HIGH]
+>Footer a tag links redirect to appropriate page.[HIGH]
 
 
 
   
+
+
+
+
+
+
+
+
+
 

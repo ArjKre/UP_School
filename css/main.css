@@ -289,21 +289,124 @@ html {
 
 
 /*=============================================
-      =            MANAGMENT            =
+      =            FACILITIES            =
 =============================================*/
 
-/* .mang-ctr{
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-  padding-top : 45px !important;
+.fac-ctr{
+  padding-top: 40px !important;
+  padding-bottom: 0px !important;
+  position: relative;
+  
 }
 
 
-.Mgmt-title{
+.fac-ctr::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  background-image: url(../assets/images/optional_bckgrd_pattern.jpg);
+  filter:opacity(0.05)
+}
+
+
+.fac-hld{
+  position: relative;
+  max-width: 100% !important;
+  z-index: 901;
+}
+
+.fac-title{
   font-family: var(--font-handwriting);
   font-size: var(--text-heading-size);
   color: var(--color-primary);
-} */
+}
+
+.fac-grid{
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fac-grid-img, .fac-grid-txt{
+  padding: 0 !important;
+}
+
+.fac-grid > .fac-grid-img{
+  position: relative;
+
+}
+
+.fac-grid-img > .arrw{
+  position: absolute;
+  bottom: -1px;
+  left: 42%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #fff;
+  height: 50px;
+  width: 100px;
+}
+
+#arrw-up{
+  position: absolute;
+  top: 0 !important;
+  left: 42%;
+  transform: rotate(180deg);
+}
+
+.fac-grid-img > .arrw > .arrw-img{
+  background: url(../assets/images/optional_bckgrd_pattern.jpg);
+  width: 100px;
+  height: 100px;
+  filter: opacity(0.05);
+}
+
+.fac-grid > .fac-grid-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.fac-grid > .fac-grid-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper > .fac-grid-title{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.fac-grid-txt h2 {
+  width: fit-content;
+  font-size: var(--text-subheading-size);
+  text-align: center;
+}
+
+.fac-grid-txt p{
+  font-size: var(--text-body-size);
+  text-align: center;
+}
+
+.fac-grid-txt > .wrapper > .hgl-txt{
+  padding-bottom: 0 !important;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  margin: 8px auto;
+  padding: 0 !important;
+  width: fit-content !important;
+  border-bottom: 1px solid transparent;
+  transition: all .55s ease;
+}
+
+.fac-grid-txt > .wrapper > .hgl-txt:hover{
+  border-bottom: 1px solid green;
+}
+
 
 
 
@@ -455,10 +558,6 @@ html {
 }
 
 
-
-
-
-
 /*=============================================
       =            FOOTER            =
 =============================================*/
@@ -525,6 +624,7 @@ html {
   flex-direction: row;
   font-size: 1rem;
   gap: 15px;
+  
 }
 
 .col-3-1{
@@ -532,6 +632,17 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  
+}
+
+.col-3-1 > .ft-txt{
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.col-3-1 > .ft-txt:hover{
+  border-bottom: 2px solid white;
+  
 }
 
 
@@ -551,6 +662,14 @@ html {
 /*=============================================
     =            MEDIA QUERIES            =
 =============================================*/
+
+
+  /* scroll behaviour */
+  @media (prefers-reduced-motion: no-preference){
+    :has(:target){
+      scroll-behavior: smooth;
+    }
+  }
 
   @media (max-width: 1280px) {
     /* !The local variables
