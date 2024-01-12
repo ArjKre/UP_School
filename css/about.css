@@ -10,6 +10,7 @@
     --border-color-light: #eee;
     --bg-color: #fff;
     --heading-color: #060606;
+    --footer-bg: #060500;
     --border-radius: 8px;
     --border-radius-full: 30px;
 }
@@ -19,13 +20,17 @@ h3.title-style {
     font-size: 48px;
     line-height: 58px;
     font-weight: bold;
-    font-family: var(--font-main);
+    font-family: var(--font-Main);
   }
   
   h3.title-style span {
     font-weight: 100;
     font-family: var(--font-handwriting);
     color: var(--color-primary);
+  }
+
+  .text-content{
+    font-family: var(--font-Main);
   }
   
   @media (max-width:991px) {
@@ -92,6 +97,7 @@ h3.title-style {
     margin-bottom: 2px;
     font-size: 36px;
     font-weight: bold;
+    font-family: var(--font-Main);
     color: var(--color-primary-darken);
   }
   
@@ -207,6 +213,7 @@ h3.title-style {
     font-size: 20px;
     line-height: 1.5em;
     font-weight: 600;
+    font-family: var(--font-Main);
     color: var(--heading-color);
   }
   
@@ -305,6 +312,7 @@ h3.title-style {
     top: 2em;
     right: 55%;
     font-size: 1em;
+    margin-right: 6px;
     padding: 12px 25px;
     background: #060606;
     color: #fff;
@@ -324,6 +332,7 @@ h3.title-style {
   @media screen and (max-width: 991px) {
     .w3l-timeline-1 .timeline:before {
       top: 6%;
+      bottom: 14%;
     }
   }
   
@@ -345,11 +354,13 @@ h3.title-style {
       padding: 1em;
       margin-top: 10em;
       width: 100%;
+      left: -15px;
       margin-bottom: 0em;
     }
   
     .w3l-timeline-1 .timeline-icon {
       top: 4.5em;
+      left: 48%;
     }
   
     .w3l-timeline-1 .timeline:before {
@@ -447,3 +458,102 @@ h3.title-style {
   
   /* //responsive */
   /*-- //timeline  --*/
+  /* footer */
+.footer-inner-main {
+  background: var(--footer-bg);
+}
+
+.w3l-footer9 .footer-inner-main .sub-one-left h6,
+.w3l-footer9 .footer-inner-main .sub-two-right h6 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 26px;
+  font-weight: bold;
+}
+
+.w3l-footer9 .footer-inner-main ul.social li,
+.w3l-footer9 .footer-inner-main ul.jst-link li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.w3l-footer9 .footer-inner-main ul.social li a {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  background: var(--primary-color);
+  display: inline-block;
+  border-radius: var(--border-radius-full);
+  text-align: center;
+  font-size: 15px;
+}
+
+.w3l-footer9 .footer-inner-main ul.social li a:hover {
+  transition: 0.3s ease;
+  color: #fff;
+  background: var(--primary-dark);
+}
+
+.w3l-footer9 .footer-inner-main ul.social li a span {
+  line-height: 36px;
+}
+
+.w3l-footer9 .columns p,
+.w3l-footer9 .columns p a {
+  color: var(--font-color);
+}
+
+.w3l-footer9 .footer-inner-main .sub-two-right ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-color);
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.w3l-footer9 .footer-inner-main .sub-two-right ul li a:hover {
+  color: var(--primary-color);
+}
+
+.w3l-footer9 .footer-inner-main .columns p a {
+  color: var(--primary-color);
+}
+
+.w3l-footer9 .w3tweet-holder-grids {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.w3l-footer9 .w3tweet-holder-grids .w3-twitter-icon i {
+  color: #fff;
+  margin-top: 7px;
+}
+
+.w3tweet-text a {
+  text-decoration: none;
+  color: var(--font-color);
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.w3tweet-text a {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.w3tweet-text a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+p.copy-text a {
+  color: #fff;
+}
+
+/* //footer */
