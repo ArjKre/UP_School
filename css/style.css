@@ -275,6 +275,7 @@ html {
 .container{
   width: 100%;
   padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
   box-sizing: border-box;
 }
 
@@ -384,6 +385,135 @@ html {
 @media (prefers-reduced-motion: no-preference){
   :has(:target){
     scroll-behavior: smooth;
+  }
+}
+
+
+/* MEDIA QUERY FOR HERO & NAVBAR */
+
+/* Just for now need to be fixed later... */
+@media (min-width: 1280px) {
+  .hero-holder {
+    margin-left: 50px !important;
+  }
+}
+
+@media (max-width: 1180px) {
+  /* Navbar */
+
+  .header {
+    transition: 0.5 ease-in;
+  }
+  .navlist li {
+    gap: 1.8rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero > .holder {
+    margin: 0 auto !important;
+  }
+
+  .hero h1 {
+    font-size: calc(var(--text-title-size) * 0.9);
+  }
+
+  .hero-p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navlist {
+    position: absolute;
+    top: 80%;
+    right: -100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-shadow: 10px;
+    height: min-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+  }
+
+  .navlist li {
+    display: inline;
+  }
+
+  .navlist a {
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px !important;
+    transition: all 0.5s ease;
+    color: var(--color-primary);
+  }
+
+  .navlist a:hover {
+    clip-path: none !important;
+    background-color: transparent;
+    color: var(--color-primary);
+    transform: rotateY(15deg);
+  }
+
+  .navlist .button-28 {
+    display: none;
+  }
+
+  .navlist.open {
+    right: 0%;
+  }
+
+  .hero h1 {
+    font-size: calc(var(--text-heading-size));
+  }
+
+  #hero-welcome-text {
+    font-size: calc(var(--text-heading-size) - 4px);
+  }
+
+  .hero p {
+    font-size: 14px;
+    width: 70ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-p {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  #hero-welcome-text {
+    font-size: 20px;
+  }
+
+  .hero {
+    height: 70vh;
   }
 }
 

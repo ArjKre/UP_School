@@ -584,39 +584,8 @@ Content - cnt
       max-width: 1024px !important;
     }
 
-    
-    
-    
-    /*----------  HERO SECTION  ----------*/
-    .hero {
-      text-align: center;
-    }
-  
-    .hero > .holder {
-      margin: 0 auto !important;
-    }
-  
-    .hero #hero-mal {
-      font-size: calc(var(--text-title-size) - 1px);
-    }
-  
-    .hero-para{
-      display: flex;
-      justify-content: center;
-    }
+    /* ABOUT US */
 
-    .hero-para p {
-      font-size: calc(var(--text-body-size) * .9);
-    }
-  
-    .hero-btn-hold {
-      display: flex;
-      justify-content: center;
-    }
-    
-
-    /*----------  ABOUT US  ----------*/
-    
     .abt-img-frame img {
       width: 600px;
     }
@@ -634,15 +603,14 @@ Content - cnt
       font-size: calc(var(--icon-body-size) * 0.8) !important;
     }
 
-    
-    /*----------  STATUS SECTION  ----------*/
-    
+    /* STATS Section */
+
     .stat-cnt-number {
       font-size: calc(var(--text-title-size) * 1.25);
     }
 
-    
-    /*----------  FACILITIES  ----------*/
+
+    /* FACILITITES */
 
     .fac-hld{
       max-width: 100% !important;
@@ -657,9 +625,8 @@ Content - cnt
       font-size: calc(var(--text-body-size)* .9);
     }
   
-    
-    /*----------  GALLERY SECTION  ----------*/
-    
+    /* GALLERY  */
+
     .Gridbox  .Grid > .Imgbox{
       height: 145px;
     }
@@ -735,8 +702,6 @@ Content - cnt
     .abt-title {
       font-size: calc(var(--text-heading-size) * 0.8);
       line-height: calc(var(--text-heading-size) * 3);
-      left: -45%;
-      top: 0%;
     }
 
     .abt-title hr {
@@ -873,7 +838,7 @@ Content - cnt
       top: 0px;
       left: -40%;
       font-size: calc(var(--text-heading-size) * 0.6);
-      line-height: calc(var(--text-heading-size) * 2.5);
+      line-height: calc(var(--text-heading-size) * 2.75);
     }
 
     .abt-title hr {
