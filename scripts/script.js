@@ -1,6 +1,6 @@
 
 //navbar hidden on page scroll
-const navbar = document.querySelector(".header");
+const navbar = document.querySelector(".header-ctr");
 let prevScrollY = window.scrollY;
 var twentyViewHeight = 0.2 * window.innerHeight;
 
