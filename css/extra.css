@@ -7,6 +7,7 @@
 
 .button-86 {
     font-family: var(--font-Main);
+    font-weight: bold !important;
     all: unset;
     width: 100px;
     height: 30px;
