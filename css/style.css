@@ -7,7 +7,7 @@
 
 .container{
   width: 100%;
-  padding: 10px 15px 15px 10px;
+  padding: 10px 15px 10px 15px;
   box-sizing: border-box;
 }
 
@@ -40,11 +40,19 @@
   width: max-content;
   width: auto;
   font-size: var(--text-body-size);
+  transition: all .55s ease;
+  padding: 0 !important;
+  border-bottom: 2.5px solid transparent;
 }
 
 #right-arrow-icon{
   margin-top: 1px;
   font-size: var(--icon-body-size);
+}
+
+.hgl-txt:hover{
+  gap: 5px;
+  border-bottom: 2.5px solid green;
 }
 
 /* Animation On Scroll */
@@ -103,6 +111,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Set the color of the thumb on hover */
 } 
+
+
+/* scroll behaviour */
+@media (prefers-reduced-motion: no-preference){
+  :has(:target){
+    scroll-behavior: smooth;
+  }
+}
 
 
 /* MEDIA QUERY FOR HERO & NAVBAR */
