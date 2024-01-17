@@ -353,6 +353,7 @@ Content - cnt
 .gallerygrid{
   display: flex;
   justify-content: center;
+  transition: all 10s ease;
 }
 
 .gallerygrid .Gridbox:nth-child(5){
@@ -400,6 +401,14 @@ Content - cnt
 .Gridbox .Grid:hover .Imgbox img{
   transform: scale(1.1);
   cursor: pointer;
+  
+}
+
+.gallerygrid:has(img:hover) img:not(:hover){
+  scale: .9;
+  opacity: 0.8;
+  filter: grayscale(70%);
+  transition: all .3 ease;
 }
 
 .Grid > .Imgbox {
@@ -418,6 +427,8 @@ Content - cnt
   width: 100%;
   object-fit: cover;
   aspect-ratio: 170/190;
+  transition: all 0.5s ease;
+
 }
 
 .Grid > .block {
@@ -435,10 +446,12 @@ Content - cnt
 
 
 .map-ctr{
-  padding: 0 !important;
+  padding: 0 0 25px 0 !important;
 }
 
 .map-hld{
+  margin: 0 auto;
+  max-width: 97% !important;
   padding-inline: 0 !important;
   max-width: 100%;
 }
@@ -462,6 +475,7 @@ Content - cnt
 
 
 .map{
+  border-radius: 15px;
   display: block;
   border: 0px solid;
   width: 100%;
@@ -529,6 +543,10 @@ Content - cnt
   gap: 2.5px;
 }
 
+.ph-link:hover,
+.mail-link:hover{
+  color: #70d6ff;
+}
 
 .col-3-holder{
   display: flex;
@@ -546,12 +564,12 @@ Content - cnt
   
 }
 
-.col-3-1 > .ft-txt{
+ .ft-txt{
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
 }
 
-.col-3-1 > .ft-txt:hover{
+.ft-txt:hover{
   border-bottom: 2px solid white;
   
 }
@@ -786,7 +804,7 @@ Content - cnt
     .Gridbox button{
       margin-top: 5px !important;
       margin-left: 10px !important;
-      width: 110px;
+      width: 118px;
       height: 45px;
     }
 
@@ -935,7 +953,7 @@ Content - cnt
     .Gridbox button{
       margin-top: 10px !important;
       margin-left: 10px !important;
-      width: 90px;
+      width: 116px;
       height: 44px;
     }
 
@@ -1181,18 +1199,29 @@ Content - cnt
 
     /*----------  MAP  ----------*/
     
+    .map-title{
+      margin: 0 auto;
+    }
+
     .map-title h1{
       font-size: calc(var(--text-title-size) * .8);
     }
 
     .map-title p {
-      font-size: calc(var(--text-subheading-size) * .9);
+      /* font-size: calc(var(--text-subheading-size) * .9); */
+      display: none;
     }
+
+    .map-ctr{
+      margin: 0 !important;
+      padding-bottom: 10px !important;
+    }
+
     
     .map{
-      width: 100%;
+      max-width: 100% !important;
+      border-radius: 5px;
       aspect-ratio: 16/9;
-      /* aspect-ratio: 700/800; */
     }
     
     
@@ -1299,6 +1328,7 @@ Content - cnt
     
     
     /*----------  MAP  ----------*/
+
     
     .map-title h1{
       font-size: calc(var(--text-title-size) * .6);
