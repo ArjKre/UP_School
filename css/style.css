@@ -275,7 +275,6 @@ html {
 .container{
   width: 100%;
   padding: 10px 15px 10px 15px;
-  padding: 10px 15px 10px 15px;
   box-sizing: border-box;
 }
 
@@ -284,7 +283,6 @@ html {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left:0.5rem ;
   padding-left:0.5rem ;
   padding-right: 0.5rem;
 }
@@ -297,6 +295,10 @@ html {
 
 .txtshadow{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.boxshadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .hgl-txt{
