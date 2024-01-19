@@ -6,22 +6,18 @@
     <title>Govt.Up School</title>
 
     <!-- Tab icon -->
-    <link rel="icon" href="assets/images/EdKeralaLogo-red.png" />
+    <link rel="icon" href="../assets/images/EdKeralaLogo-red.png" />
 
     <!-- custom css link -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/extra.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
 
     <!--boxicons link-->
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-
-    <!--remixicons link-->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-      rel="stylesheet" /> -->
 
     <!--GoogleFonts links-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,26 +34,30 @@
   </head>
   <body>
     <!-- /*=============================================
-        =            HEADER            =
+              =            HEADER            =
         =============================================*/ -->
 
-    <div class="header">
-      <a href="#" class="logo">
-        <img src="assets/images/EdKeralaLogo.png" />
-        ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം
-      </a>
+    <div class="container header-ctr">
+      <div class="holder header-hold">
+        <a href="#" class="logo">
+          <img src="../assets/images/EdKeralaLogo.png" />
+          <span>ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</span>
+        </a>
 
-      <ul class="navlist">
-        <li>
-          <a href="about.html">About Us</a>
-          <a href="#">Managment</a>
-          <a href="#">Academics</a>
-          <a href="#">Events</a>
-          <button class="button-28">Contact Us</button>
-          <a href="#" class="cnct-nav">Contact Us</a>
-        </li>
-      </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+          <li>
+            <a class="nav-link" href="pages/about.html">About Us</a>
+            <a class="nav-link" href="#">Managment</a>
+            <a class="nav-link" href="#">Academics</a>
+            <a class="nav-link" href="#">Events</a>
+            <a href="#footer">
+              <button class="button-28">Contact Us</button>
+            </a>
+            <a href="#footer" class="cnct-nav">Contact Us</a>
+          </li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
     </div>
 
     <!-- /*=============================================
@@ -73,7 +73,7 @@
           <h1 id="hero-mal">ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</h1>
         </div>
         <div
-          class="wrapper textshadow hero-p aos-hidden"
+          class="wrapper textshadow hero-para aos-hidden"
           style="transition-delay: 150ms">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae
@@ -82,9 +82,9 @@
           </p>
         </div>
         <div
-          class="wrapper hero-btn aos-hidden"
+          class="wrapper hero-btn-hold aos-hidden"
           style="transition-delay: 200ms">
-          <button class="button-86">Learn More</button>
+          <button class="button-86 hero-btn">Learn More</button>
         </div>
       </div>
     </section>
@@ -106,9 +106,11 @@
               exercitationem, voluptates sunt mollitia?
             </p>
           </div>
-          <div class="wrapper hgl-txt">
-            <p>Read More</p>
-            <div class="bx bx-right-arrow-alt" id="right-arrow-icon"></div>
+          <div class="wrapper" style="width: fit-content">
+            <div class="hgl-txt">
+              <p>Read More</p>
+              <div class="bx bx-right-arrow-alt" id="right-arrow-icon"></div>
+            </div>
           </div>
         </div>
         <div class="abt-img-frame">
@@ -141,7 +143,7 @@
         </div>
 
         <div class="warpper stat-cnt">
-          <div data-number="1000" class="stat-cnt-number">
+          <div class="stat-cnt-number" data-number="1000">
             <span>0</span>
           </div>
           <div
@@ -181,12 +183,15 @@
     <section class="container fac-ctr">
       <div class="holder fac-hld">
         <div class="wrapper fac-title">
-          <h1>FACILITIES</h1>
+          <h1 class="aos-hidden">OUR FACILITIES</h1>
+          <hr class="aos-hidden" style="transition-delay: 300ms" />
         </div>
         <div class="wrapper fac-grid">
           <div class="wrapper fac-grid-img">
-            <div class="arrw">
-              <div class="arrw-img"></div>
+            <div class="arrw-flex">
+              <div class="arrw">
+                <div class="arrw-img"></div>
+              </div>
             </div>
             <img
               src="https://images.unsplash.com/photo-1522661067900-ab829854a57f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -210,8 +215,10 @@
             </div>
           </div>
           <div class="wrapper fac-grid-img">
-            <div class="arrw">
-              <div class="arrw-img"></div>
+            <div class="arrw-flex">
+              <div class="arrw">
+                <div class="arrw-img"></div>
+              </div>
             </div>
             <img
               src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -235,8 +242,10 @@
             </div>
           </div>
           <div class="wrapper fac-grid-img">
-            <div class="arrw" id="arrw-up">
-              <div class="arrw-img"></div>
+            <div class="arrw-flex" id="arrw-up">
+              <div class="arrw">
+                <div class="arrw-img"></div>
+              </div>
             </div>
             <img
               src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -280,7 +289,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 100ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="/assets/images/temporaryImage.jpg">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -295,7 +308,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 300ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption2"
+                href="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -303,7 +320,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 400ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption3"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -313,7 +334,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 500ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption4"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -321,7 +346,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 600ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption5"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -336,7 +365,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 800ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption6"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -344,7 +377,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 900ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -352,7 +389,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1000ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -367,7 +408,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1200ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -375,18 +420,26 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1300ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
             </div>
-            <button class="button-28 gal-btn aos-hidden">More</button>
+            <button class="button-28 gal-btn aos-hidden">See More...</button>
           </div>
           <div class="Gridbox">
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1400ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -394,7 +447,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1500ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://images.unsplash.com/photo-1580818135730-ebd11086660b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -404,7 +461,11 @@
             <div
               class="Grid aos-reveal-hidden"
               style="transition-duration: 1600ms">
-              <a class="Imgbox">
+              <a
+                class="Imgbox"
+                data-lightbox="Events"
+                data-title="Caption1"
+                href="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661963714957-beda36b90eae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </a>
@@ -415,7 +476,7 @@
               <div class="block"></div>
             </div>
           </div>
-          <button class="gal-btn-sml button-28 aos-hidden">More</button>
+          <button class="gal-btn-sml button-28 aos-hidden">See More...</button>
         </div>
       </div>
     </section>
@@ -426,13 +487,13 @@
     <section class="container sec map-ctr">
       <div class="map-hld">
         <div class="wrapper map-title">
-          <h1 class="aos-hidden" style="transition-delay: 100ms">Road To Us</h1>
+          <h1 class="aos-hidden" style="transition-delay: 100ms">ROAD TO US</h1>
           <p class="aos-hidden" style="transition-delay: 200ms">
             Direction To Our School
           </p>
         </div>
         <iframe
-          class="map"
+          class="map boxshadow"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.4828844655863!2d76.41538111781054!3d10.106420558265626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0809ac7216dbc9%3A0x1573d89c500faf96!2sGovt.%20UP%20School%20North%20Vazhakkulam!5e0!3m2!1sen!2sin!4v1704188673311!5m2!1sen!2sin"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -443,11 +504,11 @@
     <!--/*=============================================
           =            FOOTER            =
     =============================================*/-->
-    <footer class="container ft-holder">
+    <footer class="container ft-holder" id="footer">
       <div class="holder ft-flex">
         <div class="wrapper col-1">
           <div class="logo-frame">
-            <img src="assets/images/EdKeralaLogo.png" />
+            <img src="../assets/images/EdKeralaLogo.png" />
             <span>ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</span>
           </div>
           <p>
@@ -465,11 +526,15 @@
             </div>
             <div class="col-2-div">
               <div class="bx bxs-phone"></div>
-              <p>+91 4842678628</p>
+              <a class="ph-link ft-txt" href="tel:+914842678628"
+                ><p>(+91)4842678628</p></a
+              >
             </div>
             <div class="col-2-div" style="align-items: end !important">
               <div class="bx bxs-envelope"></div>
-              <p>gupsnorthvazhakulam@gmail.com</p>
+              <a class="mail-link ft-txt" href="mailto:gupsnorthvazhakulam@gmail.com"
+                ><p>gupsnorthvazhakulam@gmail.com</p></a
+              >
             </div>
           </div>
         </div>
@@ -499,5 +564,6 @@
 
     <!--custom js link-->
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
