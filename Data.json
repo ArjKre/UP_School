@@ -1,0 +1,26 @@
+[
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person1",
+        "email": "person1@gmail.com",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person2",
+        "0": "person2@gmail.com",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person3",
+        "email": "person3@gmail.com",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person4",
+        "email": "person4@gmail.com",
+        "subject": "Maths teacher"
+    }
+]
