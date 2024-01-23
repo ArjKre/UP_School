@@ -18,6 +18,39 @@
 
 html{
   font-family: var(--font-Main) !important;
+  overflow-x: hidden;
+}
+
+/* Animation */
+
+@keyframes slideInLeft {
+  0%{
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(0)
+  }
+}
+
+@keyframes slideInRight {
+  0%{
+    transform: translateX(150%);
+  }
+
+  100%{
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeIN {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }
 
 /* title style */
@@ -29,12 +62,16 @@ h3.title-style {
   }
   
   h3.title-style span {
+    animation: 1s ease-out 0s 1 slideInLeft;
+    display: block;
     font-weight: 100;
     font-family: var(--font-handwriting);
     color: var(--color-primary);
   }
 
   .text-content{
+    animation: fadeIN 5s;
+    font-size: var(--text-subheading-size);
     font-family: var(--font-Main);
   }
   
@@ -99,8 +136,9 @@ h3.title-style {
   }
   
   h4.inner-text-title {
+    animation: fadeIN 5s;
     margin-bottom: 2px;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     font-family: var(--font-Main);
     color: var(--color-primary-darken);
@@ -134,6 +172,7 @@ h3.title-style {
 
 /* about section */
 .w3l-about .img-border {
+    animation: 1s ease-in-out 0s 1 slideInRight;
     z-index: 1;
   }
   
@@ -265,7 +304,7 @@ h3.title-style {
   }
   
   .w3l-timeline-1 .timeline p {
-    font-size: 20px;
+    font-size: var(--text-body-size);
     line-height: 1.5em;
     font-weight: 600;
     font-family: var(--font-Main);
@@ -366,7 +405,8 @@ h3.title-style {
     position: absolute;
     top: 2em;
     right: 55%;
-    font-size: 1em;
+    font-size: var(--text-body-size);
+    font-family: var(--font-Main);
     margin-right: 6px;
     padding: 12px 25px;
     background: #060606;
@@ -543,14 +583,24 @@ h3.title-style {
 .footer-content-box h5{
   color: var(--color-text-white);
   font-weight: 900;
+  font-size: var(--text-subheading-size);
+  font-family: var(--font-malayalam);
+}
+
+.footer-content-box h4{
+  color: var(--color-text-white);
+  font-weight: 900;
+  display: block;
+  margin: 1rem 0;
+  font-size: var(--text-subheading-size);
   font-family: var(--font-malayalam);
 }
 
 .footer-content-box span{
   display: block;
   color: var(--color-text-white);
-  line-height: 20px;
-  font-size: var(--text-body-size);
+  line-height: 25px;
+  font-size: var(--text-subheading-size);
   font-weight: 500;
 }
 
