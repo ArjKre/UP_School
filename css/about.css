@@ -53,6 +53,25 @@ html{
   }
 }
 
+.aos-right-hidden{
+  opacity: 0;
+  fill: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.aos-right-show{
+  opacity: 1;
+  fill: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .aos-right-hidden{
+    transition: none;
+  }
+}
+
 /* title style */
 h3.title-style {
     font-size: 48px;
@@ -70,7 +89,7 @@ h3.title-style {
   }
 
   .text-content{
-    animation: fadeIN 5s;
+    animation: fadeIN 3s;
     font-size: var(--text-subheading-size);
     font-family: var(--font-Main);
   }
@@ -136,7 +155,7 @@ h3.title-style {
   }
   
   h4.inner-text-title {
-    animation: fadeIN 5s;
+    animation: fadeIN 3s;
     margin-bottom: 2px;
     font-size: 48px;
     font-weight: bold;
