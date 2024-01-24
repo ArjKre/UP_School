@@ -1,6 +1,6 @@
 
 //navbar hidden on page scroll
-const navbar = document.querySelector(".header");
+const navbar = document.querySelector(".header-ctr");
 let prevScrollY = window.scrollY;
 var twentyViewHeight = 0.2 * window.innerHeight;
 
@@ -35,7 +35,7 @@ menu.onclick = function(){
 };
 
 
-//for text-from-right animation on Scroll
+//for text-from-/right animation on Scroll
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -83,7 +83,6 @@ function counterFunction(){
         updateNumber();
     });
 }
-
 const statSection = document.querySelectorAll(".stat-cnt");
 const statSelectionObserver = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{

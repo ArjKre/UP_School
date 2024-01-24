@@ -1,10 +1,9 @@
 
 //TO Do List
 
-> Match NAVBAR % HERO responsiveness to holder responsiveness...[HIGH]
+> Redesign hamburger menu[--HIGH]
 > Fix navbar element's padding and polygon hover glitch[MEDIUM]
-> Redesign hamburger menu[HIGH]
->Gallery - SHow full image when clicked with button to go to the next,& on image hover show description [HIGH]
+
 
 > "READ MORE" text link redirect to the appropriate page.[HIGH]
 >Gallery button redirect to the appropriate page.[HIGH]
