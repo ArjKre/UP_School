@@ -3,12 +3,19 @@
 
 > Redesign hamburger menu[--HIGH]
 > Fix navbar element's padding and polygon hover glitch[MEDIUM]
-
-
 > "READ MORE" text link redirect to the appropriate page.[HIGH]
 >Gallery button redirect to the appropriate page.[HIGH]
 >Footer a tag links redirect to appropriate page.[HIGH]
 
+
+ABOUT'S page
+> make the title bigger and all caps. [check https://www.ekal.org/in/about-ekal-india for inspo]
+> PARA SIZE  between 18px - 20px [HIGH]
+> add address phone number and email to Footer [HIGH] [NOTE:- check the homepage footer to know more..]
+> make all the image on the timeline the same size.
+> reduce the padding between the image and white holder in the timeline section.
+> remove mail and instagram circles in footer.
+> Redesign or change color of the image 3d border in the "WELCOME TO" section
 
 
   
