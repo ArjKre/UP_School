@@ -625,7 +625,7 @@ h3.title-style {
   display: block;
   margin: 1rem 0;
   font-size: var(--text-subheading-size);
-  font-family: var(--font-malayalam);
+  font-family: var(--font-Main);
 }
 
 .footer-content-box span{
@@ -634,6 +634,15 @@ h3.title-style {
   line-height: 25px;
   font-size: var(--text-subheading-size);
   font-weight: 500;
+}
+
+.footer-content-box a span{
+  display: block;
+  font-weight: 900;
+  color: var(--color-text-white);
+  line-height: 25px;
+  font-family: var(--font-Main);
+  font-size: var(--text-body-size);
 }
 
 .footer-content-box .col-2-div{
@@ -668,7 +677,6 @@ h3.title-style {
     float: none;
     width: 100%;
     border-right: none;
-    border-bottom: 3px solid var(--color-text-white);
   }
 
   .map-sec{
