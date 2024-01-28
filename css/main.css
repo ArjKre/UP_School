@@ -189,7 +189,7 @@ Content - cnt
   left: 0;
   z-index: 900;
   background-image: url(../assets/images/optional_bckgrd_pattern.jpg);
-  filter:opacity(0.03)
+  filter:opacity(0.03);
 }
 
 

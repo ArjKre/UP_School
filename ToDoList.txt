@@ -3,8 +3,6 @@
 
 > Redesign hamburger menu[--HIGH]
 > Fix navbar element's padding and polygon hover glitch[MEDIUM]
-
-
 > "READ MORE" text link redirect to the appropriate page.[HIGH]
 >Gallery button redirect to the appropriate page.[HIGH]
 >Footer a tag links redirect to appropriate page.[HIGH]
