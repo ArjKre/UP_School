@@ -89,15 +89,17 @@
 .fac-row > .hol > img {
   width: 55%;
   aspect-ratio: 9/6;
-  border: 5px solid var(--color-primary-darken);
+  /* border: 5px solid var(--color-primary-darken); */
 }
 
 .txt-hld-lft,
 .txt-hld-rght {
-  background-color: white;
-  width: 50%;
+  background-color: var(--color-primary);
+  padding: 40px 60px 40px 50px;
   position: relative;
   height: fit-content;
+  /* width: 50%; */
+  /* padding-block: 10px; */
 }
 
 .txt-hld-rght {
@@ -110,12 +112,14 @@
 
 .txt-hld h3 {
   font-size: var(--text-heading-size);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
   font-family: var(--font-handwriting);
-  color: var(--color-primary);
+  color: var(--color-text-white);
 }
 
 .txt-hld p {
-  /* width: 60ch; */
+  color: var(--color-text-white);
+  font-size: 17px;
   text-wrap: pretty;
-  font-size: var(--text-body-size);
 }
