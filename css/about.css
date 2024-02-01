@@ -658,7 +658,19 @@ h3.title-style {
 .map-sec{
   border-radius: var(--border-radius) var(--border-radius-max) var(--border-radius) var(--border-radius);
   width: 100%;
-  height: 450px; 
+  height: 280px; 
+}
+
+@media (max-width: 992px) {
+  .map-sec{
+    height: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  .map-sec{
+    height: 350px;
+  }
 }
 
 @media (max-width: 768px){
