@@ -39,10 +39,10 @@
 
         <ul class="navlist">
           <li>
-            <a class="nav-link" href="../pages/about.html">About Us</a>
+            <a class="nav-link" href="./about.html">About Us</a>
             <a class="nav-link" href="#">Managment</a>
             <a class="nav-link" href="#">Academics</a>
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="./events.html">Events</a>
             <a href="#footer">
               <button class="button-28">Contact Us</button>
             </a>
@@ -74,31 +74,98 @@
     </section>
     <!-- ================ Event Category Section ===================== -->
     <div class="event-category-wrapper">
-          <div class="event-category-card" 
+          <div class="event-category-card active-category" id="all" onclick="changeActiveCategoryCard('all')"
           style="background: url('https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
           background-size: cover;">
           <h1>ALL</h1>
           </div>
-          <div class="event-category-card" 
+          <div class="event-category-card" id="sports" onclick="changeActiveCategoryCard('sports')"
           style="background: url('https://images.pexels.com/photos/618612/pexels-photo-618612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
           background-size: cover;">
           <h1>SPORTS</h1>
           </div>
-          <div class="event-category-card" 
+          <div class="event-category-card" id="arts" onclick="changeActiveCategoryCard('arts')"
           style="background: url('https://images.pexels.com/photos/14602419/pexels-photo-14602419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
           background-size: cover;">
           <h1>ARTS</h1>
           </div>
-          <div class="event-category-card" 
+          <div class="event-category-card" id="annual_day" onclick="changeActiveCategoryCard('annual_day')"
           style="background: url('https://cdn-az.allevents.in/events5/banners/0b84a7656c64def4a40d39e9a02e303c6e559ff41b844510ebdfb5fbd1065f3c-rimg-w1200-h800-gmir.jpg?v=1696248765'); 
           background-size: cover;">
           <h1>ANNUAL  DAY</h1>
           </div>
-          
     </div>
+    <!-- ================== Staggered Grid Images ================= -->
+    <div class="container staggered-grid-sec">
+      <div class="wrapper">
+        <div class="event-grid">
+          <div class="grid-row-2">
+            <img src="https://images.pexels.com/photos/1416736/pexels-photo-1416736.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-2">
+            <img src="https://images.pexels.com/photos/939702/pexels-photo-939702.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-row-2">
+            <img src="https://images.pexels.com/photos/298825/pexels-photo-298825.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-2">
+            <img src="https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/1805843/pexels-photo-1805843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/1582736/pexels-photo-1582736.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+          <div class="grid-col-1">
+            <img src="https://images.pexels.com/photos/1490844/pexels-photo-1490844.jpeg?auto=compress&cs=tinysrgb&w=600" alt="event-image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============== Footer ======================= -->
+    <footer class="footer-main">
+      <div class="footer-content-box">
+          <h5>ഗവ. യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</h5>
+          <h4>Address</h4>
+          <span>4C48+GHW</span>
+          <span>Kunnathukara Rd, Marampally</span>
+          <span>Ernakulam, Kerala 683105</span>
+          <div class="col-2-div mt-4">
+              <div class="bx bxs-phone"></div>
+              <a class="ph-link ft-txt" href="tel:+914842678628"><p>(+91)4842678628</p></a>
+          </div>
+          <div class="col-2-div" style="align-items: end !important">
+              <div class="bx bxs-envelope"></div>
+              <a class="mail-link ft-txt" href="mailto:gupsnorthvazhakulam@gmail.com"><p>gupsnorthvazhakulam@gmail.com</p></a>
+          </div>
+          <h4>Quick Links</h4>
+          <a href="..index.html"><span class="quicklinks">HOME</span></a>
+          <a href="..index.html"><span class="quicklinks">ABOUT</span></a>
+          <a href="..index.html"><span class="quicklinks">MANAGMENT</span></a>
+          <a href="..index.html"><span class="quicklinks">ACADEMICS</span></a>
+          <a href="..index.html"><span class="quicklinks">EVENTS</span></a>
+      </div>
+      <div class="footer-map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.6685993990995!2d76.417133081204!3d10.107187351277803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0809ac7216dbc9%3A0x1573d89c500faf96!2sGovt.%20UP%20School%20North%20Vazhakkulam!5e0!3m2!1sen!2sin!4v1705247136367!5m2!1sen!2sin" class="map-sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </footer>
 
     <!--custom js link-->
-    <script defer src="scripts/script.js"></script>
+    <script defer src="../scripts/script.js"></script>
+    <script src="../scripts/eventPage.js"></script>
     <script defer src="scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
