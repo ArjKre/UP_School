@@ -89,7 +89,6 @@
 .fac-row > .hol > img {
   width: 55%;
   aspect-ratio: 9/6;
-  /* border: 5px solid var(--color-primary-darken); */
 }
 
 .txt-hld-lft,
@@ -98,8 +97,6 @@
   padding: 40px 60px 40px 50px;
   position: relative;
   height: fit-content;
-  /* width: 50%; */
-  /* padding-block: 10px; */
 }
 
 .txt-hld-rght {
@@ -122,4 +119,122 @@
   color: var(--color-text-white);
   font-size: 17px;
   text-wrap: pretty;
+}
+
+
+
+/*=============================================
+      =            SECTION-3            =
+=============================================*/
+
+
+.sec-3-hld{
+  position: relative;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-slider-list{
+  position: relative;
+  height: 546.66px;
+}
+
+
+.slide-track{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 250ms ease-in;
+}
+
+.current-slide{
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.slide-track img{
+  width: 820px;
+  aspect-ratio: 9/6;
+}
+
+.slider-nav{
+  width: 66% !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px !important;
+}
+
+.slider-indicator{
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, .3);
+  margin: 0 12px;
+  transition: all .3s ease 0s;
+}
+
+.slider-indicator:hover{
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.slider-indicator.active{
+  width: 12px;
+  height: 12px;
+  background-color: #d0021b;
+}
+
+.sec-3-hld  .txt-slide{
+  position: absolute;
+  top: 190px;
+  right: 70px;
+  background-color: #d0021b;
+  color: var(--color-text-white);
+  padding: 42px 60px 62px 40px;
+  width: 462px;
+  height: 500px;
+}
+
+.txt-slider-list{
+  position: relative;
+}
+
+.text{
+  display: none;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 250ms ease-in;
+}
+.text  h3{
+  font-size: var(--text-heading-size);
+  margin-bottom: 40px;
+  max-height: min-content;
+}
+
+.text  p {
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+
+.clck-txt{
+  display: flex;
+  cursor: pointer;
+  color: var(--color-text-white);
+  font-weight: 900;
+  font-size: 17px;
+  margin-top: 25px;
+  transition: all 350ms ease;
+  gap: 0px;
+}
+
+.clck-txt:hover{
+  gap: 5px;
 }
