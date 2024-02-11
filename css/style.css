@@ -40,6 +40,130 @@ html {
 }
 
 
+.sec{
+  margin-block-start: 50px !important;
+}
+
+.container{
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+}
+
+.holder{
+  /* border: 1px solid; */
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left:0.5rem ;
+  padding-right: 0.5rem;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.txtshadow{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.boxshadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hgl-txt{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+  color: green;
+  cursor: pointer;
+  width: max-content;
+  width: auto;
+  font-size: var(--text-body-size);
+  transition: all .55s ease;
+  padding: 0 !important;
+  border-bottom: 2.5px solid transparent;
+}
+
+#right-arrow-icon{
+  margin-top: 1px;
+  font-size: var(--icon-body-size);
+}
+
+.hgl-txt:hover{
+  gap: 5px;
+  border-bottom: 2.5px solid green;
+}
+
+/* Animation On Scroll */
+
+.aos-hidden{
+  opacity: 0;
+  fill: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.aos-show{
+  opacity: 1;
+  fill: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .aos-hidden{
+    transition: none;
+  }
+
+  .aos-reveal-hidden{
+    transition: none;
+  }
+}
+
+.aos-reveal-hidden{
+  opacity: 0;
+  transform: translateY(100deg);
+  transition: all 4s;
+}
+
+.aos-reveal-show{
+  opacity: 1;  
+  transition: translateY(0deg);
+}
+
+
+
+/* web Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+   background-color: rgba(241, 241, 241, 0.5); /*Set the color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.7); /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the thumb on hover */
+} 
+
+
+/* scroll behaviour */
+@media (prefers-reduced-motion: no-preference){
+  :has(:target){
+    scroll-behavior: smooth;
+  }
+}
+
+
 /*=============================================
   =            HEADER & NAVBAR            =
 =============================================*/
@@ -265,131 +389,4 @@ html {
 
 
 /*=====  NAVBAR  ======*/
-
-
-
-.sec{
-  margin-block-start: 50px !important;
-}
-
-.container{
-  width: 100%;
-  padding: 10px 15px 10px 15px;
-  box-sizing: border-box;
-}
-
-.holder{
-  border: 1px solid;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left:0.5rem ;
-  padding-right: 0.5rem;
-}
-
-.wrapper{
-  width: 100%;
-  padding: 0.5rem;
-  box-sizing: border-box;
-}
-
-.txtshadow{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-.boxshadow{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.hgl-txt{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.2rem;
-  color: green;
-  cursor: pointer;
-  width: max-content;
-  width: auto;
-  font-size: var(--text-body-size);
-  transition: all .55s ease;
-  padding: 0 !important;
-  border-bottom: 2.5px solid transparent;
-}
-
-#right-arrow-icon{
-  margin-top: 1px;
-  font-size: var(--icon-body-size);
-}
-
-.hgl-txt:hover{
-  gap: 5px;
-  border-bottom: 2.5px solid green;
-}
-
-/* Animation On Scroll */
-
-.aos-hidden{
-  opacity: 0;
-  fill: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.aos-show{
-  opacity: 1;
-  fill: blur(0);
-  transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-  .aos-hidden{
-    transition: none;
-  }
-
-  .aos-reveal-hidden{
-    transition: none;
-  }
-}
-
-.aos-reveal-hidden{
-  opacity: 0;
-  transform: translateY(100deg);
-  transition: all 4s;
-}
-
-.aos-reveal-show{
-  opacity: 1;  
-  transition: translateY(0deg);
-}
-
-
-
-/* web Scrollbar */
-
-::-webkit-scrollbar {
-  width: 8px; /* Set the width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-   background-color: rgba(241, 241, 241, 0.5); /*Set the color of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(136, 136, 136, 0.7); /* Set the color of the scrollbar thumb */
-  border-radius: 6px; /* Set the border radius of the thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Set the color of the thumb on hover */
-} 
-
-
-/* scroll behaviour */
-@media (prefers-reduced-motion: no-preference){
-  :has(:target){
-    scroll-behavior: smooth;
-  }
-}
-
-
 
