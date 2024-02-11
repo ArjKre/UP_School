@@ -44,8 +44,19 @@ const observer = new IntersectionObserver((entries)=>{
     });
 });
 
+const observerRightTrans = new IntersectionObserver((entries)=>{
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('aos-right-show');
+        }
+    });
+});
+
 const hideElements = document.querySelectorAll('.aos-hidden');
 hideElements.forEach((el)=> observer.observe(el));
+
+const hidenewElements = document.querySelectorAll('.aos-right-hidden');
+hidenewElements.forEach((el)=> observerRightTrans.observe(el));
 
 
 
