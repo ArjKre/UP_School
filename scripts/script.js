@@ -25,12 +25,11 @@ window.onscroll = function (){
 
 
 //menu icon
-let menu = document.querySelector("#menu-icon");
-
+let menu = document.querySelector("#hamburger");
 let navlist = document.querySelector(".navlist");
 
 menu.onclick = function(){
-    menu.classList.toggle('bx-x');
+    menu.classList.toggle("open");
     navlist.classList.toggle("open");
 };
 
