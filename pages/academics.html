@@ -51,10 +51,10 @@
 
         <ul class="navlist">
           <li>
-            <a class="nav-link" href="pages/about.html">About Us</a>
+            <a class="nav-link" href="about.html">About Us</a>
             <a class="nav-link" href="#">Managment</a>
-            <a class="nav-link" href="#">Academics</a>
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="academics.html">Academics</a>
+            <a class="nav-link" href="events.html">Events</a>
             <a href="#footer">
               <button class="button-28">Contact Us</button>
             </a>
@@ -78,9 +78,9 @@
           =            VISION             =
       =============================================*/-->
 
-    <section class="container vision-ctr sec">
+    <section class="container vision-ctr">
       <div class="holder">
-        <div class="wrapper">
+        <div class="wrapper aos-reveal-hidden">
           <h2>Our Vision</h2>
         </div>
         <div class="flx-hld">
@@ -101,13 +101,13 @@
     <!--/*=============================================
           =            section-2            =
     =============================================*/ -->
-    <section class="container sec sec-2">
+    <section class="container sec-2">
       <div class="holder sec-2-hld">
-        <div class="wrapper">
+        <div class="wrapper aos-reveal-hidden">
           <h2>Student Highlights</h2>
         </div>
-        <div class="wrapper img-slide">
-          <ul class="img-slider-list">
+        <div class="wrapper img-slide aos-right-hidden" style="transition-delay: 100ms;">
+          <ul id="target" class="img-slider-list">
             <li class="slide-track current-slide">
               <img
                 src="https://images.unsplash.com/photo-1706731211401-4402510b6b34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -132,7 +132,7 @@
             <button class="slider-indicator"></button>
           </div>
         </div>
-        <div class="wrapper txt-slide">
+        <div class="wrapper txt-slide aos-right-hidden" style="transition-delay: 200ms;">
           <ul class="txt-slider-list">
             <li class="text current-slide">
               <h3>Lorem Ipsum</h3>
@@ -192,6 +192,24 @@
               </div>
             </li>
           </ul>
+          <!-- XXXXX for respo XXXXX -->
+          <div class="text respo" style="opacity: 0; position: relative; top: 0; display: none;">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+              at? Eveniet sequi, similique vero, odio qui eos deleniti placeat
+              repudiandae quos, officiis labore nam? Aliquam hic pariatur
+              velit nisi sit earum doloribus asperiores. Maxime corporis
+              corrupti placeat quia necessitatibus sunt at, aliquid, neque
+              vero iure eum cupiditate eos nihil ducimus obcaecati cum? Modi,
+              sed eius!
+            </p>
+            <div class="clck-txt">
+              <p>Read More</p>
+              <div class="bx bx-chevron-right" id="right-arrow-icon"></div>
+            </div>
+          </div>
+          <!-- XXXXX for respo XXXXX -->
         </div>
       </div>
     </section>
@@ -200,17 +218,17 @@
     <!--/*=============================================
           =            FACILITIES            =
     =============================================*/ -->
-    <section class="container fac sec">
+    <section class="container fac ">
       <div class="holder">
-        <div class="wrapper">
+        <div class="wrapper aos-reveal-hidden">
           <h2>Our Learning Space</h2>
         </div>
         <div class="fac-row">
           <div class="wrapper hol lft">
-            <img
+            <img class="aos-hidden" style="transition-delay: 100ms;"
               src="https://images.unsplash.com/photo-1706109397238-4981eeda57c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="" />
-            <div class="txt-hld txt-hld-rght boxshadow">
+            <div class="txt-hld txt-hld-rght boxshadow aos-hidden" style="transition-delay: 250ms;">
               <div class="wrapper">
                 <h3>Smart Classroom</h3>
               </div>
@@ -226,7 +244,7 @@
           </div>
 
           <div class="wrapper hol rght">
-            <div class="txt-hld txt-hld-lft boxshadow">
+            <div class="txt-hld txt-hld-lft boxshadow aos-right-hidden" style="transition-delay: 250ms;">
               <div class="wrapper">
                 <h3>Computer Lab</h3>
               </div>
@@ -239,16 +257,16 @@
                 </p>
               </div>
             </div>
-            <img
+            <img class="aos-right-hidden" style="transition-delay: 100ms;"
               src="https://images.unsplash.com/photo-1706109397238-4981eeda57c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="" />
           </div>
 
           <div class="wrapper hol lft">
-            <img
+            <img class="aos-hidden" style="transition-delay: 100ms;"
               src="https://images.unsplash.com/photo-1706109397238-4981eeda57c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="" />
-            <div class="txt-hld txt-hld-rght boxshadow">
+            <div class="txt-hld txt-hld-rght boxshadow aos-hidden" style="transition-delay: 250ms;">
               <div class="wrapper">
                 <h3>Library</h3>
               </div>
@@ -265,6 +283,32 @@
         </div>
       </div>
     </section>
+
+    <!--/*=============================================
+          =            FOOTER            =
+    =============================================*/-->
+    <footer class="container ft-ctr" id="footer">
+      <div class="holder ft-hld">
+        <div class="logo-frame">
+          <img src="../assets/images/EdKeralaLogo.png"/>
+          <span>ഗവ.യു.പി സ്കൂൾ വടക്കേ വാഴക്കുളം</span>
+        </div>
+        <div class="wrapper ft-txt-flex">
+          <a class="ft-txt" href="../index.html">Home</a>
+          <a class="ft-txt" href="about.html">About Us</a>
+          <a class="ft-txt" href="faculties.html">Managment</a>
+          <a class="ft-txt" href="academics.html">Academics</a>
+          <a class="ft-txt" href="events.html">Events</a>
+          <a class="ft-txt" href="#footer">Contact Us</a>
+        </div>
+      </div>
+      <div class="holder ft-holder-2">
+        <hr/>
+        <div class="wrapper flex-txt">
+          <p>©2024|Govt. UP School North Vazhakkulam.All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
 
   </body>
   <script defer src="../scripts/script.js"></script>
