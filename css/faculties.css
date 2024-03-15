@@ -17,229 +17,152 @@
     --border-radius-max: 50px;
 }
 
-.team{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin-top: 100px;
-}
+/* managemmnet*/
+.faculdet{
+  margin-top: 5px;
+    width:130%;
+    padding-right: 160px;
+  
+  
+  }
 
-.team .member{
-    position: relative;
-    padding: 30px;
-    box-shadow: 1px 3px 16px rgba(7, 1, 1, 0.1);
-    border-radius: 5px;
-    background: #fff;
-}
-.team .member .teampic{
-    overflow: hidden;
-    width: 500px;
-    border-radius: 50%;
-}
-.team .member .member-info{
-    padding-left: 30px;
-}
-.team .member h4{
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #cc3e58;
-}
-.team .member span{
+  .faculdet .box{
+    max-width: 0px;
+    display: table-row-group;
+    border:3px solid rgb(175, 134, 134);
+    margin: 10px auto;
+    padding-left: -20px;
+  }
+  .box img{
+    max-width: 180px;
+    height: 200px;
     display: block;
-    font-size: 15px;
-    padding-bottom: 10px;
-    position: relative;
-    font-weight: 500;
-}
-.team .member span::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: black;
-    bottom: 0;
-    left: 0;
-}
-.team .member p{
-    margin: 10px 0 0 0;
-    font-size: 14px;
-
-}
-.team .member .social{
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.team .member .social a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: #eff2f8;
-
-}
-.team .member .social a i{
-    color: #cc3e58;
-    font-size: 16px;
-    margin: 0 2px;
-}
-.team .member .social a:hover{
-    background: rgb(206, 104, 86);
-}
-.team .member:hover{
-    border: 2px solid var(--color-primary);
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
-.team .member .social a+a{
-    margin-left: 8px;
-}
-section{
-    padding: 60px 0;
-    overflow: hidden;
-}
-.section-title{
-    text-align: center;
-    padding-bottom: 100px;   
-}
-
-.underline{
-    width: 220px;
-    height: 1px;
-    background-color: black;
-    margin: auto;
-    margin-top: -10px;
-}
-.section-title h2{
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    position: relative;
-    color: #cc3e58;
-    font-family: var(--font-handwriting);
-}
-.section-title p{
-    margin-top: 20px;
-}
-
-/* our teachers*/
-.slider{
-    display: flex;
-    padding: 0 35px;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    background: linear-gradient(to left top, #ffffff, #ffffff);
-    box-sizing: border-box;
-    
-}
-.wrapper {
-    max-width: 1500px;
-    width: 100%;
-    position: relative;
-  }
-  .wrapper i {
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-size: 1.25rem;
-    position: absolute;
-    text-align: center;
-    line-height: 50px;
-    background: #f8d3d3;
-    border-radius: 50%;
-    box-shadow: 0 5px 6px rgba(0,0,0,0.23);
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-  }
-  .wrapper i:active{
-    transform: translateY(-50%) scale(0.85);
-  }
-  .wrapper i:first-child{
-    left: -22px;
-  }
-  .wrapper i:last-child{
-    right: -22px;
-  }
-  .wrapper .carousel{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    border-radius: 8px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  .carousel.no-transition {
-    scroll-behavior: auto;
-  }
-  .carousel.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
-  }
-  .carousel.dragging .card {
-    cursor: grab;
-    user-select: none;
-  }
-  .carousel :where(.card, .img) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .carousel .card {
-    scroll-snap-align: start;
-    height: 342px;
-    list-style: none;
-    background: #fff;
-    cursor: pointer;
-    padding-bottom: 20px;
-    flex-direction: column;
-    border-radius: 8px;
-  }
-  .carousel .card .img {
-    background: #df6363;
-    height: 148px;
-    width: 148px;
-    border-radius: 50%;
-  }
-  .card .img img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    padding-block: 20px;
+   
+}
+  .box .heading{
+    width: 10%;
+    padding: 0 0px;
+    min-width: 100px;
+float: right;
+
+
   }
-  .carousel .card h2 {
-    font-weight: 500;
-    font-size: 1.56rem;
-    margin: 30px 0 5px;
+  .box .heading h2{
+    margin-top: 90px;
+    text-transform: uppercase;
+    font-size: 20px;
   }
-  .carousel .card span {
-    color: #6A6D78;
-    font-size: 1.31rem;
+  .box .heading h4{
+    text-transform: lowercase;
+    margin-top: 2px;
+}
+  .headerdepartment{
+    padding-top: 70px;
+    align-content: flex-start;
+    padding-left: 15px;
   }
-  @media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
+  
+
+
+  @media(max-width:412px) {
+    .box img{
+      max-width: 180px;
+      height: 200px;
+      display: block;
+      object-fit: cover;
+      padding-block: 20px;
+      padding-left: 18px;
+  }
+    .box .heading{
+      min-width: 50px;
+  float: right;
+  padding-right: 500px;
+  padding-top: 40px;
+  
+  
     }
-  }
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
+    .box .heading h2{
+      margin-top: 90px;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-right: px;
     }
+    .box .heading h4{
+      text-transform: lowercase;
+      margin-top: 2px;
+      font-size: 18px;
+      width: 200px;
   }
+  }
+
+  
+  @media(min-width:768px) {
+    .faculdet{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      max-width: 84%;
+    
+      margin-left: 270px;
+     margin-right: 890px;
+     border:3px solid rgb(255, 253, 253);
+
+    }
+    .faculdet .box{
+      max-width: 480px;
+      border:3px solid rgb(255, 255, 255);
+      margin: 1px auto;
+      padding-left: 20px;
+      padding-right: 160px;
+      margin-left: 20px;
+      
+    
+    }
+    .faculdet .box:hover{
+   
+        border: 2px solid var(--color-primary);
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+    .faculdet .box img{
+      max-width: 300px;
+      height: 200px;
+      display: block;
+      object-fit: cover;
+      padding: 0px;
+      float: right;
+      padding-right: 10px;
+      padding-bottom: 45px;
+    }
+    .faculdet .box .heading{
+      float: right;
+      width:110px;
+
+      padding-bottom: 18px;
+      
+    }
+    .box .heading h4{
+      text-transform: lowercase;
+      width:190px;
+}
+.box .heading h2{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 20px;
+  
+}
+    .headerdepartment{
+      padding-top: 150px;
+      align-content: center;
+      padding-left: 320px;
+    }
+    
+  }
+ 
 /* footer  */
 .footer-main{
     width: 100%;
