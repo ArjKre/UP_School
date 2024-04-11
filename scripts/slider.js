@@ -80,7 +80,7 @@ function startIntervalIfVisible() {
             intervalId = null;
           }
         }
-      }, 2500);
+      }, 2000);
     }
   } else {
     // Stop the interval if it's running

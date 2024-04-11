@@ -269,7 +269,7 @@
 =============================================*/
 
 .ft-ctr{
-  background-color:#e9e9e9 ;
+  background-color: var(--color-primary-darken);
 }
 
 
@@ -304,6 +304,7 @@
 }
 
 .ft-txt{
+  font-size: 16px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   font-weight: bold;
@@ -311,12 +312,15 @@
 }
 
 .ft-txt:hover{
-  border-bottom: 2px solid var(--color-primary);
-  
+  scale: 1.1;
+  color: white;
+  opacity: 1;
+  border-bottom: transparent !important;
 }
 
 .ft-txt-flex a {
-  color: var(--color-text-black);
+  color: snow;
+  opacity: 0.75;
 }
 
 .flex-txt{
