@@ -1,8 +1,6 @@
 @import url("style.css");
 
-:root {
-  --font-worksans: "Work Sans", sans-serif;
-}
+
 
 /* SubHeading */
 .holder .wrapper h2 {
@@ -261,73 +259,6 @@
 .clck-txt:hover {
   gap: 5px;
 }
-
-
-
-/*=============================================
-      =            FOOTER            =
-=============================================*/
-
-.ft-ctr{
-  background-color: var(--color-primary-darken);
-}
-
-
-.ft-hld{
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-frame{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  color: var(--color-text-black);
-}
-
-.logo-frame span{
-  font-family: var(--font-malayalam);
-}
-
-.logo-frame img{
-  max-width: fit-content;
-  height: 70px;
-  aspect-ratio: auto 100/50;
-}
-
-.ft-txt-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 25px;
-}
-
-.ft-txt{
-  font-size: 16px;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  font-weight: bold;
-  transition: all .55s ease;
-}
-
-.ft-txt:hover{
-  scale: 1.1;
-  color: white;
-  opacity: 1;
-  border-bottom: transparent !important;
-}
-
-.ft-txt-flex a {
-  color: snow;
-  opacity: 0.75;
-}
-
-.flex-txt{
-  display: flex;
-  justify-content: center;
-}
-
 
 
 

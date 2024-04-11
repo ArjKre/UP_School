@@ -25,6 +25,7 @@
   --font-Main: "Hedvig Letters Serif", serif;
   --font-malayalam: "Noto Serif Malayalam", serif;
   --font-handwriting: "Dancing Script", cursive;
+  --font-worksans: "Work Sans", sans-serif;
 }
 
 * {
@@ -254,6 +255,116 @@ html {
 
 
 /*=============================================
+      =            FOOTER            =
+=============================================*/
+
+.ft-holder, .ft-holder a{
+  background: #93273b;
+  color: white !important;
+}
+
+#footer h2{
+  font-family: var(--font-Main) !important;
+  color: white !important;
+  font-size: 1.5em;
+  opacity: 1;
+  text-transform: capitalize;
+
+}
+
+.ft-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-block: 15px;
+}
+
+.col-1,.col-2,.col-3{
+  max-width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col-1 span{
+  font-family: var(--font-malayalam);
+}
+
+.col-1 p{
+  width: 45ch;
+  font-size: 1rem;
+}
+
+.col-1 > .logo-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-frame img{
+  max-width: fit-content;
+  height: 100px;
+  aspect-ratio: auto 100/50;
+}
+
+.col-2-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.col-2-div{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 2.5px;
+}
+
+.ph-link:hover,
+.mail-link:hover{
+  color: #70d6ff;
+}
+
+.col-3-holder{
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  gap: 15px;
+  
+}
+
+.col-3-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+ .ft-txt{
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.ft-txt:hover{
+  border-bottom: 2px solid white;
+  
+}
+
+
+.ft-holder-2 > .flex-txt{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 14px;
+}
+
+
+
+/*=============================================
     =            MEDIA QUERIES            =
 =============================================*/
 
@@ -388,6 +499,4 @@ html {
 }
 
 
-
-/*=====  NAVBAR  ======*/
 
