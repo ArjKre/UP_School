@@ -9,6 +9,8 @@ window.onscroll = function (){
         if(prevScrollY < window.scrollY){
             //scroll down
             navbar.classList.add("hidden");
+            navlist.classList.remove("open");
+            menu.classList.remove("open");
         }
         else{
             navbar.classList.remove("hidden");

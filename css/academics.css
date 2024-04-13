@@ -1,5 +1,5 @@
 @import url("style.css");
-
+@import url("extra.css");
 
 
 /* SubHeading */
@@ -89,6 +89,7 @@
 
 .fac{
   margin-block: 15vh;
+  overflow-x: hidden;
 }
 
 .fac-row {
@@ -147,6 +148,7 @@
 
 .sec-2{
   margin-block: 15vh;
+  overflow: hidden;
 }
 
 .sec-2-hld {
@@ -331,6 +333,10 @@
 
   .holder {
     max-width: 768px !important;
+  }
+
+  .header-hold{
+    max-width: 100% !important;
   }
 
   /*----------  Vision  ----------*/
