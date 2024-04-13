@@ -1,0 +1,209 @@
+@import url(extra.css);
+@import url(style.css);
+
+:root {
+  --layer: rgb(255, 255, 255, 0.4);
+  --border-color-light: #eee;
+  --bg-grey: #f4f4f4;
+  --bg-lightgrey: #f8f9fa;
+  --border-color-light: #eee;
+  --bg-color: #fff;
+  --heading-color: #060606;
+  --footer-bg: #060500;
+  --border-radius: 8px;
+  --border-radius-full: 30px;
+  --border-radius-max: 50px;
+}
+
+
+
+/*=============================================
+        =            TITLE            =
+=============================================*/
+
+.title-ctr {
+  position: relative;
+  height: 55vh;
+  border: 1px solid;
+}
+
+.title-ctr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1589983850741-7dde79db1ebc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: 0% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(60%);
+}
+
+.title-ctr h1 {
+  font-family: var(--font-handwriting);
+  font-size: calc(var(--text-title-size) * 1.2);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 4.5px;
+}
+
+.title-ctr > .wrapper {
+  padding-left: 5%;
+  padding-bottom: 1%;
+  max-width: fit-content;
+  position: absolute;
+  bottom: 0px;
+}
+
+/*=============================================
+    =            MANAGEMENT            =
+=============================================*/
+
+
+.sub-title  > h2{
+  font-size: calc(var(--text-heading-size) * 1.5);
+}
+
+.sub-title {
+  font-size: var(--text-heading-size);
+  font-family: var(--font-worksans);
+  color: var(--color-primary-darken);
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+.faculdet {
+  margin-top: 5px;
+  width: 130%;
+  padding-right: 160px;
+}
+
+.faculdet .box {
+  max-width: fit-content;
+  display: table-row-group;
+  border: 3px solid rgb(175, 134, 134);
+  margin: 10px auto;
+  padding-left: -20px;
+}
+
+
+.box img {
+  max-width: 180px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  padding-block: 20px;
+}
+.box .heading {
+  width: 10%;
+  padding: 0 0px;
+  min-width: 100px;
+  float: right;
+}
+.box .heading h2 {
+  margin-top: 90px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.box .heading h4 {
+  text-transform: lowercase;
+  margin-top: 2px;
+}
+
+.headerdepartment {
+  padding-top: 70px;
+  align-content: flex-start;
+  padding-left: 15px;
+}
+
+/*=============================================
+      =            MEDIA QUERY            =
+  =============================================*/
+
+@media (max-width: 412px) {
+  .box img {
+    max-width: 180px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    padding-block: 20px;
+    padding-left: 18px;
+  }
+  .box .heading {
+    min-width: 50px;
+    float: right;
+    padding-right: 500px;
+    padding-top: 40px;
+  }
+  .box .heading h2 {
+    margin-top: 90px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: px;
+  }
+  .box .heading h4 {
+    text-transform: lowercase;
+    margin-top: 2px;
+    font-size: 18px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faculdet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    max-width: 84%;
+
+    margin-left: 270px;
+    margin-right: 890px;
+    border: 3px solid rgb(255, 253, 253);
+  }
+  .faculdet .box {
+    max-width: 480px;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 1px auto;
+    padding-left: 20px;
+    padding-right: 160px;
+    margin-left: 20px;
+  }
+
+  .faculdet .box img {
+    max-width: 300px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 45px;
+  }
+  .faculdet .box .heading {
+    float: right;
+    width: 110px;
+
+    padding-bottom: 18px;
+  }
+  .box .heading h4 {
+    text-transform: lowercase;
+    /* width: 190px; */
+    font-size: 20px;
+  }
+
+  .box .heading h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .headerdepartment {
+    padding-top: 150px;
+    align-content: center;
+    padding-left: 320px;
+  }
+}

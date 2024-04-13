@@ -1,0 +1,22 @@
+[
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person1",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person2",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person3",
+        "subject": "Maths teacher"
+    },
+    {
+        "image": "./assets/images/Faculties/team1.png",
+        "name": "person4",
+        "subject": "Maths teacher"
+    }
+]
