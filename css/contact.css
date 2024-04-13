@@ -207,6 +207,18 @@
     .holder {
       max-width: 768px !important;
     }
+
+    
+    /*=====  CONTACT US  ======*/
+   .contact-flx{
+    flex-direction: column;
+    gap: 2.5vh;
+   }
+   
+   .contact-info{
+    max-width: none;
+   }
+    
 }
 
 @media (max-width: 768px){
