@@ -4,6 +4,8 @@ Content - cnt
  */
 
  @import url('style.css');
+ @import url('extra.css');
+ @import url('lightbox.min.css');
 
 
 
@@ -39,6 +41,8 @@ Content - cnt
 .hero #hero-welcome{
   font-size: var(--text-heading-size);
   color: var(--color-text-white);
+  font-family: var(--font-handwriting);
+  color: var(--color-primary);
 }
 
 .hero-para p{
@@ -47,6 +51,7 @@ Content - cnt
   font-size: var(--text-body-size);
   padding-left: 2px;
   text-wrap: pretty;
+  font-family: var(--font-malayalam);
 }
 
 
@@ -84,6 +89,7 @@ Content - cnt
 
 .abt-cnt p {
   margin-right: 15px;
+  font-family: var(--font-malayalam);
 }
 
 .abt-cnt-holder > .hgl-txt {
