@@ -42,11 +42,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1589983850741-7dde79db1ebc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)),
+  url("../assets/images/pics-ours/DSC07306.JPG");
   background-position: 0% 70%;
+  /* background-size: 100% 100%; */
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(60%);
+  filter: grayscale(10%);
 }
 
 .title-ctr h1 {

@@ -42,14 +42,45 @@ html{
   }
 }
 
-@keyframes fadeIN {
-  0%{
-    opacity: 0;
-  }
+/*=============================================
+        =            TITLE            =
+=============================================*/
 
-  100%{
-    opacity: 1;
-  }
+.title-ctr {
+  position: relative;
+  height: 55vh;
+  border: 1px solid;
+}
+
+.title-ctr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55)),
+  url("../assets/images/pics-ours/DSC07329.JPG");
+  background-position: 0% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+}
+
+.title-ctr h1 {
+  font-family: var(--font-handwriting);
+  font-size: calc(var(--text-title-size) * 1.2);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 4.5px;
+}
+
+.title-ctr > .wrapper {
+  padding-left: 5%;
+  padding-bottom: 1%;
+  max-width: fit-content;
+  position: absolute;
+  bottom: 0px;
 }
 
 .aos-right-hidden{
@@ -777,7 +808,7 @@ h3.title-style {
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 1.5rem !important;
 }
 
 .mt-lg-0 {
