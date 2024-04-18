@@ -1,4 +1,4 @@
-@import url(main.css);
+@import url(index.css);
 @import url(style.css);
 @import url(extra.css);
 
@@ -720,6 +720,43 @@ h3.title-style {
   .map-sec{
     height: 300px;
   }
+}
+
+
+@media (max-width:768px) {
+  
+    /*=====  TITLE  ======*/
+
+    .title-ctr > .wrapper {
+      padding-left: 2.5%;
+    }
+  
+    .title-ctr h1 {
+      font-size: calc(var(--text-title-size) * 0.8);
+    }
+}
+
+
+@media (max-width: 475px) {
+  /* !The local variable
+    h - calc(var(--text-heading-size) * .6);
+    */
+
+  .holder {
+    max-width: 100%;
+  }
+
+  /*=====  TITLE  ======*/
+
+  .title-ctr > .wrapper {
+    max-height: fit-content;
+    margin: 0 auto;
+  }
+
+  .title-ctr h1 {
+    font-size: calc(var(--text-title-size) * 0.75);
+  }
+
 }
 
 /* BOOTSTRAP */
