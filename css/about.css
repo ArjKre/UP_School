@@ -121,7 +121,7 @@ h3.title-style {
   .text-content{
     animation: fadeIN 3s;
     font-size: var(--text-body-size);
-    font-family: var(--font-Main);
+    font-family: var(--font-malayalam);
   }
   
   @media (max-width:991px) {
@@ -254,6 +254,14 @@ h3.title-style {
     width: 50%;
     padding-top: 0.5rem;
   }
+  @media (max-width: 1200px) {
+    .about-txt-sec{
+      width: 100%;
+    }
+    .about-img-sec{
+      width: 100%;
+    }
+  }
   
   @media (max-width: 992px) {
     .w3l-about .img-border {
@@ -328,6 +336,10 @@ h3.title-style {
  
   .imageSec {
     height: 300px;
+  }
+
+  #schoolOldImg{
+    filter: grayscale(.8);
   }
 
   .timeline-img{
