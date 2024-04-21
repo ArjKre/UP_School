@@ -134,8 +134,8 @@
   font-size: var(--text-heading-size);
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-family: var(--font-handwriting);
   color: var(--color-text-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .txt-hld p {

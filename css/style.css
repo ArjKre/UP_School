@@ -41,6 +41,10 @@ html {
   font-family: var(--font-Main);
 }
 
+.lang-mal{
+  font-family: var(--font-malayalam);
+}
+
 
 .sec{
   margin-block-start: 50px !important;
@@ -384,7 +388,9 @@ html {
 
 .col-1 p{
   width: 45ch;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: var(--font-malayalam);
 }
 
 .col-1 > .logo-frame {

@@ -72,13 +72,17 @@ function counterFunction(){
             // console.log(targetNumber);
             const initialNum = parseInt(curElem.innerText);
             // console.log(initialNum);
-            
-            const incrementNumber = Math.trunc(targetNumber / speed);
-            // console.log(incrementNumber);
-            
+            var incrementNumber;
+            if(targetNumber >= 100){
+             incrementNumber = Math.trunc(speed/ targetNumber);
+             console.log(incrementNumber);
+            }else{
+             incrementNumber = 1;
+            }
+
             if (initialNum < targetNumber) {
                 curElem.innerText = `${initialNum + incrementNumber}+`;
-                setTimeout(updateNumber, 10);
+                setTimeout(updateNumber, 25);
             }
         };
         updateNumber();
