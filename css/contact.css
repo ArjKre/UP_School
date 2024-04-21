@@ -141,6 +141,9 @@
 
 .logo-frame span{
   font-family: var(--font-malayalam);
+  font-weight: bold;
+  color: white;    
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .logo-frame img{
@@ -208,11 +211,6 @@
       max-width: 768px !important;
     }
 
-    .header-hold{
-      max-width: 100% !important;
-      padding-inline: 0.5em;
-    }
-    
     /*=====  CONTACT US  ======*/
    .contact-flx{
     flex-direction: column;
@@ -223,10 +221,6 @@
     max-width: none;
    }
 
-   
-
-   
-    
 }
 
 @media (max-width: 768px){
@@ -289,7 +283,6 @@
     flex-wrap: wrap;
   }
   
-
 }
 
 @media (max-width: 475px){

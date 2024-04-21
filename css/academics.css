@@ -337,10 +337,6 @@
     max-width: 768px !important;
   }
 
-  .header-hold{
-    max-width: 100% !important;
-  }
-
   /*----------  Vision  ----------*/
 
   .flx-hld{
@@ -517,7 +513,6 @@
   }
 
   .holder {
-    padding: 0 !important;
     max-width: 475px !important;
   }
 
