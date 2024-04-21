@@ -37,10 +37,11 @@
     bottom: 0;
     left: 0;
     background-image: url("");
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)),
+    background: linear-gradient(rgba(255, 255, 255, 0.275), rgba(0, 0, 0, 0.45)),
     url("../assets/images/pics-ours/DSC07358.JPG");
     background-position: 0% 60%;
-    background-size: 100% 100%;
+    background-size: 100%;
+    filter: contrast() saturate();
     background-repeat: no-repeat;
   }
   
