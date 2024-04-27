@@ -112,3 +112,8 @@ function goToDiv(divId){
     var div = document.getElementById(divId);
     div.scrollIntoView({behavior:"smooth"});
 }
+
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const date = new Date();
+let monthName = month[date.getMonth()];
+document.getElementById("schoolOngingMonth").textContent = `${monthName} ${date.getFullYear()}`
