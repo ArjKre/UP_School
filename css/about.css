@@ -387,6 +387,7 @@ h3.title-style {
   }
   
   .w3l-timeline-1 .dir-r {
+    font-size: var(--font-malayalam);
     float: right;
   }
   
@@ -791,7 +792,7 @@ h3.title-style {
 
 @media (min-width: 1200px) {
   .container-bx {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin-right: auto;
     margin-left: auto;
   }
