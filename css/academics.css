@@ -236,9 +236,13 @@
   transition: 250ms ease-in-out;
 }
 .text h3 {
-  font-size: var(--text-heading-size);
+  font-size: 42px;
   margin-bottom: 40px;
   max-height: min-content;
+}
+
+.text span{
+  font-family: var(--font-handwriting);
 }
 
 .text p {
