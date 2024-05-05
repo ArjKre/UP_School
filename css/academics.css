@@ -134,8 +134,8 @@
   font-size: var(--text-heading-size);
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-family: var(--font-handwriting);
   color: var(--color-text-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .txt-hld p {
@@ -236,9 +236,13 @@
   transition: 250ms ease-in-out;
 }
 .text h3 {
-  font-size: var(--text-heading-size);
+  font-size: 42px;
   margin-bottom: 40px;
   max-height: min-content;
+}
+
+.text span{
+  font-family: var(--font-handwriting);
 }
 
 .text p {
@@ -335,10 +339,6 @@
 
   .holder {
     max-width: 768px !important;
-  }
-
-  .header-hold{
-    max-width: 100% !important;
   }
 
   /*----------  Vision  ----------*/
@@ -517,7 +517,6 @@
   }
 
   .holder {
-    padding: 0 !important;
     max-width: 475px !important;
   }
 

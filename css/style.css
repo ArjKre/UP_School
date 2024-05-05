@@ -1,4 +1,5 @@
-@import '../css/main.css';
+@import url(index.css);
+@import url(extra.css);
 
 
 /*=============================================
@@ -38,6 +39,10 @@
 
 html {
   font-family: var(--font-Main);
+}
+
+.lang-mal{
+  font-family: var(--font-malayalam);
 }
 
 
@@ -230,8 +235,13 @@ html {
   text-wrap: balance;
   font-family: var(--font-malayalam);
   text-decoration: none;
-  color: var(--color-text-black);
+  color: var(--color-primary);
+  font-weight: bold;
   font-size: 1rem;
+}
+
+.logo span{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .logo img {
@@ -372,11 +382,15 @@ html {
 
 .col-1 span{
   font-family: var(--font-malayalam);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-weight: bold;
 }
 
 .col-1 p{
   width: 45ch;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: var(--font-malayalam);
 }
 
 .col-1 > .logo-frame {
@@ -481,9 +495,10 @@ html {
     padding: 0 !important;
   }
 
-  .header-hold{
-    max-width: 100% !important;
+  .header-ctr > .holder{
+    max-width: none !important;
   }
+
 }
 
 @media (max-width: 970px){
