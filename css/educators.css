@@ -55,6 +55,12 @@
   bottom: 0px;
 }
 
+.flx-hld-p{
+  font-size: var(--text-body-size);
+  color: black;
+  text-wrap: pretty;
+}
+
 /*=============================================
     =            MANAGEMENT            =
 =============================================*/
@@ -108,181 +114,13 @@
   font-weight: 100;
 }
 
+
 /*=============================================
-    =            MEDIA QUERIES            =
+    =            OVERSEER            =
 =============================================*/
 
-@media (max-width: 1280px) {
-  /* !The local variables
-    p - calc(var(--text-heading-size) * .9);
-    */
-
-  .holder {
-    max-width: 1024px !important;
-  }
-
-  /*----------  Vision  ----------*/
-
-  .flx-hld {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 1024px) {
-  /* ! The local variables
-    h - calc(var(--text-heading-size) * .8);
-    */
-
-  .holder {
-    max-width: 768px !important;
-  }
-
-  /*----------  Vision  ----------*/
-
-  .flx-hld {
-    flex-direction: column;
-  }
-
-  
-  /*----------  MANAGEMENT  ----------*/
-  
-  .box img{
-    height: 120px;
-  }
-
-  .box h2{
-    font-size: 20px;
-  }
-
-  .box h4{
-    font-size: 16px;
-  }
-
-  .box > .heading{
-    padding-left: 12px;
-  }
-  
-}
-
-@media (max-width: 768px) {
-  /* ! The local variables
-    h - calc(var(--text-heading-size) * .6);  
-    p - calc(var(--text-body-size) * .8);
-    */
-
-  .holder {
-    max-width: 640px !important;
-  }
-
-  .holder .wrapper h2 {
-    font-size: calc(var(--text-smtitle-size) * 0.8);
-  }
-
-  /*=====  TITLE  ======*/
-
-  .title-ctr > .wrapper {
-    padding-left: 2.5%;
-  }
-
-  .title-ctr h1 {
-    font-size: calc(var(--text-title-size) * 0.8);
-  }
-
-  
-  /*----------  MANAGEMENT  ----------*/
-  
-  .faculdet {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  .box img{
-    height: 160px;
-  }
-
-  
-}
-
-@media (max-width: 640px) {
-  .container {
-    padding: 0 !important;
-  }
-
-  .holder {
-    max-width: 475px !important;
-  }
-
-
-  
-  /*----------  MANAGEMENT  ----------*/
-  
-  .faculdet {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  .box img{
-    height: 200px;
-  }
-
-  .sub-title > h2 {
-    font-size: 34px !important;
-  }
-
-  .sub-title {
-    font-size: 25px !important;
-  }
-  
-}
-
-@media (max-width: 475px) {
-  /* !The local variable
-    h - calc(var(--text-heading-size) * .6);
-    */
-
-  .holder {
-    max-width: 100%;
-  }
-
-  /*=====  TITLE  ======*/
-
-  .title-ctr > .wrapper {
-    max-height: fit-content;
-    margin: 0 auto;
-  }
-
-  .title-ctr h1 {
-    font-size: calc(var(--text-title-size) * 0.75);
-  }
-
-  
-  /*----------  MANAGEMENT  ----------*/
-  
-  .sub-title > h2 {
-    font-size: calc(var(--text-heading-size) * .6);
-  }
-  
-  .sub-title > h2 {
-    font-size: 30px !important;
-  }
-
-  .sub-title {
-    font-size: 25px !important;
-  }
-
-}
-
-
 /*-----Headmistress section------*/
-* {
-  font-family: Nunito, sans-serif;
-}
+
 
 .headmiss-container-block {
   min-height: 75px;
@@ -585,3 +423,183 @@
     width: 100%;
   }
 }
+
+
+
+
+/*=============================================
+    =            MEDIA QUERIES            =
+=============================================*/
+
+@media (max-width: 1280px) {
+  /* !The local variables
+    p - calc(var(--text-heading-size) * .9);
+    */
+
+  .holder {
+    max-width: 1024px !important;
+  }
+
+  /*----------  Vision  ----------*/
+
+  .flx-hld {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ! The local variables
+    h - calc(var(--text-heading-size) * .8);
+    */
+
+  .holder {
+    max-width: 768px !important;
+  }
+
+  /*----------  Vision  ----------*/
+
+  .flx-hld {
+    flex-direction: column;
+  }
+
+  
+  /*----------  MANAGEMENT  ----------*/
+  
+  .box img{
+    height: 120px;
+  }
+
+  .box h2{
+    font-size: 20px;
+  }
+
+  .box h4{
+    font-size: 16px;
+  }
+
+  .box > .heading{
+    padding-left: 12px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  /* ! The local variables
+    h - calc(var(--text-heading-size) * .6);  
+    p - calc(var(--text-body-size) * .8);
+    */
+
+  .holder {
+    max-width: 640px !important;
+  }
+
+  .holder .wrapper h2 {
+    font-size: calc(var(--text-smtitle-size) * 0.8);
+  }
+
+  /*=====  TITLE  ======*/
+
+  .title-ctr > .wrapper {
+    padding-left: 2.5%;
+  }
+
+  .title-ctr h1 {
+    font-size: calc(var(--text-title-size) * 0.8);
+  }
+
+  .flx-hld-p{
+    font-size: calc(var(--text-body-size) * .8);
+  }
+
+
+  
+  /*----------  MANAGEMENT  ----------*/
+  
+  .faculdet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .box img{
+    height: 160px;
+  }
+
+  
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 !important;
+  }
+
+  .holder {
+    max-width: 475px !important;
+  }
+
+
+  
+  /*----------  MANAGEMENT  ----------*/
+  
+  .faculdet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .box img{
+    height: 200px;
+  }
+
+  .sub-title > h2 {
+    font-size: 34px !important;
+  }
+
+  .sub-title {
+    font-size: 25px !important;
+  }
+  
+}
+
+@media (max-width: 475px) {
+  /* !The local variable
+    h - calc(var(--text-heading-size) * .6);
+    */
+
+  .holder {
+    max-width: 100%;
+  }
+
+  /*=====  TITLE  ======*/
+
+  .title-ctr > .wrapper {
+    max-height: fit-content;
+    margin: 0 auto;
+  }
+
+  .title-ctr h1 {
+    font-size: calc(var(--text-title-size) * 0.75);
+  }
+
+  
+  /*----------  MANAGEMENT  ----------*/
+  
+  .sub-title > h2 {
+    font-size: calc(var(--text-heading-size) * .6);
+  }
+  
+  .sub-title > h2 {
+    font-size: 30px !important;
+  }
+
+  .sub-title {
+    font-size: 25px !important;
+  }
+
+}
+
+
