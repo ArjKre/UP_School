@@ -225,7 +225,6 @@ Content - cnt
   height: 8px;
   border-radius: 2.5px;
   width: 320px;
-  /* width: 20%; */
 }
 
 
@@ -238,8 +237,6 @@ Content - cnt
 
 .fac-grid-img, .fac-grid-txt{
   padding: 0 !important;
-  /* width: 560px;
-  height: 421px; */
   width: 100%;
   height: 100%;
 }
@@ -643,10 +640,7 @@ Content - cnt
 
     
     /*----------  ABOUT SECTION  ----------*/
-    
-    /* .abt-ctr-flex{
-      max-width: 90% !important;
-    } */
+
 
     .abt-cnt-holder{
       margin-top: 5rem;

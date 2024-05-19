@@ -301,7 +301,6 @@
   
     .title-ctr > .wrapper{
       max-height: fit-content;
-      /* position: static; */
       margin: 0 auto;
     }
       
